@@ -1,0 +1,70 @@
+<html>
+<head>
+<script type="text/javascript" src="table_script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<h1>Mentee Organiser</h1>
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+<tr>
+<th>Name</th>
+<th>Comments</th>
+<th>Ratings</th>
+</tr>
+
+<tr id="row1">
+<td id="name_row1">Isha</td>
+<td id="comments_row1">almost done with the task</td>
+<td id="ratings_row1">4</td>
+<td>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+</td>
+</tr>
+
+<tr id="row2">
+<td id="name_row2">Shawn</td>
+<td id="comments_row2">learning js</td>
+<td id="ratings_row2">3</td>
+<td>
+<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+</td>
+</tr>
+
+<tr id="row3">
+<td id="name_row3">Rahul</td>
+<td id="comments_row3">has done the task</td>
+<td id="ratings_row3">5</td>
+<td>
+<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+</td>
+</tr>
+
+<tr>
+<td><input type="text" id="new_name"></td>
+<td><input type="text" id="new_comments"></td>
+<td><input type="text" id="new_ratings"></td>
+<td><input type="button" class="add" onclick="add_row();" value="Add mentee"></td>
+</tr>
+
+</table>
+</div>
+
+</body>
+<style>
+body,html{
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Lato",sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}</style>
+</html>
